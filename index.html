@@ -8,12 +8,13 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="bg-[#030712] px-4 py-3 text-center text-sm text-white sm:text-base font-RobotoMono">
+<body class="m-0">
+    <div
+        class="fixed inset-x-0 top-0 z-[60] flex h-10 items-center justify-center bg-[#030712] px-4 text-center text-sm text-white sm:text-base font-RobotoMono">
         This is a demo site. These products are not for sale.
     </div>
 
-    <header class="border-b border-gray-200">
+    <header class="fixed inset-x-0 top-10 z-50 border-b border-gray-200 bg-white">
         <div class="mx-auto flex max-w-316 items-center justify-between gap-4 px-4 py-3">
             <div class="flex items-center gap-3">
                 <div class="brand whitespace-nowrap text-2xl font-semibold sm:text-[29px]">
@@ -53,7 +54,8 @@
         </nav>
     </header>
 
-    <main class="mx-auto grid max-w-316 grid-cols-1 md:grid-cols-[370px_minmax(0,1fr)]">
+    <main
+        class="mx-auto grid max-w-5xl grid-cols-1 grid-rows-[auto_auto] pt-32 pb-36 md:grid-cols-[370px_minmax(0,1fr)]">
         <section
             class="border-b border-gray-200 px-5 py-10 sm:px-8 md:border-b-0 md:border-r md:px-0 md:pb-16 md:pr-8 md:pt-19.5">
             <div class="max-w-86.25">
@@ -80,87 +82,14 @@
                 </div>
             </div>
         </section>
-        <section
+        <section id="content"
             class="grid grid-cols-1 gap-x-8 gap-y-10 px-5 py-8 sm:grid-cols-2 sm:px-7 md:gap-y-12 md:px-7 md:pb-7 md:pt-8">
-            <article class="product flex min-w-0 flex-col font-NotoSansMono">
-                <h2 class="mb-3 text-[13px] leading-5">'BUILDER' JACKET</h2>
-
-                <div class="flex h-47.5 items-center justify-center">
-                    <img class="product-image h-46.25 w-full object-contain" src="./JACKET.png"
-                        alt="Black builder jacket" />
-                </div>
-
-                <div class="mt-3 flex items-center justify-between gap-3">
-                    <span class="whitespace-nowrap text-[13px]">0.04 USDC</span>
-
-                    <div class="flex items-center gap-3">
-                        <button class="quantity-btn minus" aria-label="Decrease quantity">−</button>
-                        <span class="quantity min-w-5 text-center text-sm">0</span>
-                        <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="product flex min-w-0 flex-col font-NotoSansMono">
-                <h2 class="mb-3 text-[13px] leading-5">'DND, I'M BUILDING' AIRPODS</h2>
-
-                <div class="flex h-47.5 items-center justify-center">
-                    <img class="product-image h-45 w-full object-contain" src="./AIRPODS.png" alt="Wireless earbuds" />
-                </div>
-
-                <div class="mt-3 flex items-center justify-between gap-3">
-                    <span class="whitespace-nowrap text-[13px]">0.01 USDC</span>
-
-                    <div class="flex items-center gap-3">
-                        <button class="quantity-btn minus" aria-label="Decrease quantity">−</button>
-                        <span class="quantity min-w-5 text-center text-sm">0</span>
-                        <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="product flex min-w-0 flex-col font-NotoSansMono">
-                <h2 class="mb-3 text-[13px] leading-5">'CAFFEINATED TO BUILD' MUG</h2>
-
-                <div class="flex h-47.5 items-center justify-center">
-                    <img class="product-image h-43.75 w-full object-contain" src="./MUG.png" alt="Black coffee mug" />
-                </div>
-
-                <div class="mt-3 flex items-center justify-between gap-3">
-                    <span class="whitespace-nowrap text-[13px]">0.02 USDC</span>
-
-                    <div class="flex items-center gap-3">
-                        <button class="quantity-btn minus" aria-label="Decrease quantity">−</button>
-                        <span class="quantity min-w-5 text-center text-sm">0</span>
-                        <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="product flex min-w-0 flex-col font-NotoSansMono">
-                <h2 class="mb-3 text-[13px] leading-5">'HYDRATED TO BUILD' BOTTLE</h2>
-
-                <div class="flex h-47.5 items-center justify-center">
-                    <img class="product-image h-46.25 w-full object-contain" src="./BOTTLE.png"
-                        alt="Dark reusable water bottle" />
-                </div>
-
-                <div class="mt-3 flex items-center justify-between gap-3">
-                    <span class="whitespace-nowrap text-[13px]">0.01 USDC</span>
-
-                    <div class="flex items-center gap-3">
-                        <button class="quantity-btn minus" aria-label="Decrease quantity">−</button>
-                        <span class="quantity min-w-5 text-center text-sm">0</span>
-                        <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
-                    </div>
-                </div>
-            </article>
         </section>
     </main>
 
-    <footer class="border-t border-gray-200 bg-white">
+    <footer class="fixed inset-x-0 bottom-0 z-50 border-t border-gray-200 bg-white">
         <div
-            class="mx-auto grid max-w-316 grid-cols-1 items-center gap-5 px-5 py-5 sm:grid-cols-2 md:grid-cols-[1fr_1fr_300px] md:px-0">
+            class="mx-auto grid max-w-316 grid-cols-1 flex justify-between gap-5 px-5 py-5 sm:grid-cols-2 md:grid-cols-[1fr_1fr_300px] md:px-0">
             <div class="text-center sm:text-left font-NotoSansMono">
                 <p class="text-sm">Built with OnchainKit</p>
                 <a href="#" class="text-[10px] text-gray-500 hover:underline">
@@ -172,13 +101,27 @@
                 TOTAL <span id="total">0.00</span> USDC
             </div>
 
-            <button
+            <button id="pay-with-crypto"
                 class="flex h-14 items-center justify-center gap-3 rounded-[10px] bg-[#0757f9] px-5 text-base font-semibold text-white transition hover:bg-blue-700">
                 <span class="text-[22px] font-RobotoCondensed"></span>
                 Pay with Crypto
             </button>
         </div>
     </footer>
+
+    <div id="modal" class="fixed w-full h-full bg-black/50 hidden top-0 left-0 items-center justify-center">
+        <div id="modalContent" class="bg-white w-md m-auto h-96 rounded-lg p-4">
+            <div class="flex items-center justify-between">
+                <p>Add To Cart</p>
+                <button onclick="onCancel()" class="size-8 border rounded-full border-border">
+                    X
+                </button>
+            </div>
+
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
